@@ -1,12 +1,21 @@
 {
-    "name": "erquilenne/project1":"^1.0.0",
+    "name": "erquilenne/project1",
     "bin": [ "bin/brain-games" ],
     "description": "my first project on hexlet",
+    "autoload":{
+         "files": [
+	    
+	   "src/Cli.php"
+	 ]
+    
+    },
     "authors": [
         {
             "name": "Maksim Goncharik",
             "email": "maks-7777@mail.ru"
         }
     ],
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.10"
+    }
 }
