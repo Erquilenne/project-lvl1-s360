@@ -1,0 +1,12 @@
+{
+    "name": "erquilenne/project1",
+    "bin": [ "bin/brain-games" ],
+    "description": "my first project on hexlet",
+    "authors": [
+        {
+            "name": "Maksim Goncharik",
+            "email": "maks-7777@mail.ru"
+        }
+    ],
+    "require": {}
+}
