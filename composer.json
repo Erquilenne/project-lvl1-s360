@@ -1,5 +1,5 @@
 {
-    "name": "erquilenne/project1",
+    "name": "erquilenne/project1":"^1.0.0",
     "bin": [ "bin/brain-games" ],
     "description": "my first project on hexlet",
     "authors": [
