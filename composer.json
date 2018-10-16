@@ -1,13 +1,11 @@
 {
     "name": "erquilenne/project1",
-    "bin": [ "bin/brain-games" ],
+    "bin": [ "./bin/brain-games" ],
     "description": "my first project on hexlet",
     "autoload":{
          "files": [
-	    
-	   "src/Cli.php"
+	    "src/Cli.php"
 	 ]
-    
     },
     "authors": [
         {

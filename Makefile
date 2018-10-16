@@ -1,1 +1,2 @@
-Install:  composer install
+Install:
+			composer install
