@@ -1,8 +1,8 @@
 {
     "name": "erquilenne/project1",
     "bin": [
-      "bin/brain-games",
-      "bin/brain-even"
+      "./bin/brain-games",
+      "./bin/brain-even"
      ],
     "description": "my first project on hexlet",
     "autoload":{
