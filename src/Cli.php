@@ -20,10 +20,10 @@ function run_even()
     line("Answer \"yes\" if number even otherwise answer \"no\".");
     $name = prompt('May I have your name?');
     line("Hello, %s", $name);
-    for($i = 0; $i < 3; $i++){
-      if(questionEven($name)){
-          return;
-      }
+    for ($i = 0; $i < 3; $i++) {
+        if (questionEven($name)) {
+            return;
+        }
     }
-    line("Congratulations, %s" , $name);
+    line("Congratulations, %s", $name);
 }
