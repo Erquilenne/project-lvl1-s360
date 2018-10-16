@@ -1,4 +1,3 @@
-#Makefile
 Install:
 	composer install
 
