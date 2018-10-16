@@ -1,5 +1,6 @@
+#Makefile
 Install:
 	composer install
 
 lint:
-	composer run-script phpcs -- --standard=PSR12 src bin
+	composer run-script phpcs -- --standard=PSR2 src bin
