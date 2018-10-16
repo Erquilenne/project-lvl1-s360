@@ -1,10 +1,14 @@
 {
     "name": "erquilenne/project1",
-    "bin": [ "./bin/brain-games" ],
+    "bin": [
+      "./bin/brain-games",
+      "./bin/brain-even"
+     ],
     "description": "my first project on hexlet",
     "autoload":{
          "files": [
-	    "src/Cli.php"
+	    "src/Cli.php",
+      "src/logic.php"
 	 ]
     },
     "scripts": {
@@ -25,5 +29,5 @@
     "require-dev": {
         "squizlabs/php_codesniffer": "*"
     }
-  
+
 }
