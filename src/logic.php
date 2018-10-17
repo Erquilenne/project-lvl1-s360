@@ -30,3 +30,53 @@ function questionEven($name)
         return true;
     }
 }
+
+function questionCalc($name)
+{
+    $num1 = mt_rand(1, 20);
+    $num2 = mt_rand(1, 20);
+    $correctAnswer = 0;
+    $operand = mt_rand(1, 3);
+
+    switch ($operand) {
+        case 1:
+            line("Question: %s + %s", $num1, $num2);
+            $answer = prompt('Your answer ');
+            $correctAnswer = $num1 + $num2;
+            if ($num1 + $num2 == $answer) {
+                line('Correct!');
+            } else {
+                line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
+                line("Let's try again, %s!", $name);
+                  return true;
+            }
+            break;
+
+        case 2:
+            line("Question: %s - %s", $num1, $num2);
+            $answer = prompt('Your answer ');
+            $correctAnswer = $num1 - $num2;
+            if ($num1 - $num2 == $answer) {
+                line('Correct!');
+            } else {
+                line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
+                line("Let's try again, %s!", $name);
+                return true;
+            }
+            break;
+
+        case 3:
+            line("Question: %s * %s", $num1, $num2);
+            $correctAnswer = $num1 * $num2;
+            $answer = prompt('Your answer ');
+            if ($num1 * $num2 == $answer) {
+                line('Correct!');
+            } else {
+                line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
+                line("Let's try again, %s!", $name);
+                return true;
+            }
+            break;
+
+    }
+}
