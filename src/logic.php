@@ -80,37 +80,29 @@ function questionCalc($name)
     }
 }
 
-function questionGcd()
+function questionGcd($name)
 {
     $randomNum1 = mt_rand(1, 100);
     $randomNum2 = mt_rand(1, 100);
 
     line('Question: %s  %s', $randomNum1, $randomNum2);
-    $divisor = isDivisor($randomNum1, $randomNum2);
+    $correctAnswer = GCD($randomNum1, $randomNum2);
     $answer = prompt('Your answer ');
-    if ($divisor == $answer) {
+    if ($correctAnswer == $answer) {
         line('Correct!');
     } else {
-        line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $divisor);
+        line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
         line("Let's try again, %s!", $name);
         return true;
-
-}
-function isDivisor($randomNum1, $randomNum2)
-{
-    $divisor1 = 0;
-    $divisor2 = 0;
-    $divisor = 0;
-    for ($i = 1; $i < $randomNum1; $i++){
-        if($randomNum1 % $i === 0){
-            $divisor1 = $i;
-        }
-        for($i = 1; $i < $randomNum2; $i++){
-            if($randomNum2 % $i === 0){
-                $divisor2 = $i;
-                $divisor = ($divisor1 === $divisor2) ? $divisor1 : $divisor;
-            }
-        }
     }
-    return $divisor;
+}
+
+function GCD($num1, $num2) {
+
+   while ($num2 != 0){
+     $t = $num1 % $num2;
+     $num1 = $num2;
+     $num2 = $t;
+   }
+   return $num1;
 }
