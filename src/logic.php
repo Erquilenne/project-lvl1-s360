@@ -7,28 +7,27 @@ use function \cli\prompt;
 
 function questionEven($name)
 {
-    $number = mt_rand(1, 999);
-    $isEven = false;
+    $question = mt_rand(1, 999);
+    $even = false;
     $yes = 'yes';
     $no = 'no';
-    $correctAnswer = $number % 2 === 0 ? 'yes' : 'no';
-    if ($number % 2 === 0) {
-        $isEven = true;
-    }
-    line('Question: %s', $number);
+    $correctAnswer = isEven($question) ? 'yes' : 'no';
+    $even = isEven($question) ? true : false;
+    line('Question: %s', $question);
     $answer = prompt('Your answer ');
 
-    if ($isEven === true && $answer === $yes) {
+    if ($answer == $correctAnswer) {
         line('Correct!');
-        $correctAnswer = $yes;
-    } elseif ($isEven === false && $answer === $no) {
-        line('Correct!');
-        $correctAnswer = $no;
+
     } else {
         line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
         line("Let's try again, %s!", $name);
         return true;
     }
+}
+
+function isEven($question){
+    return $question % 2 ===0;
 }
 
 function questionCalc($name)
