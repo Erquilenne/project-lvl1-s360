@@ -77,6 +77,5 @@ function questionCalc($name)
                 return true;
             }
             break;
-
     }
 }
