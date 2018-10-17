@@ -7,12 +7,16 @@ use function \cli\prompt;
 use function BrainGames\logic\questionEven;
 use function BrainGames\logic\questionCalc;
 use function BrainGames\logic\questionGcd;
+use function Games\calc;
+
 
 function run()
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s", $name);
+    line("You wanna play? Let's play!\n");
+
 }
 
 function run_even()
