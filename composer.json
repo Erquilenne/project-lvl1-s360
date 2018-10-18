@@ -13,7 +13,8 @@
       "src/logic.php",
       "src/games/calc.php",
       "src/games/Even.php",
-      "src/games/gcd.php"
+      "src/games/gcd.php",
+      "src/games/balance.php"
 	  ]
     },
     "scripts": {

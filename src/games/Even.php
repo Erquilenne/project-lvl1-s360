@@ -4,9 +4,11 @@ namespace BrainGames\Even;
 
 use function BrainGames\logic\game;
 
+const DESCRIPTION = "Answer \"yes\" if number even otherwise answer \"no\".\n";
+
 function run_even()
 {
-    $description = "Answer \"yes\" if number even otherwise answer \"no\".\n";
+    $description = DESCRIPTION;
 
     $getQuestionAndCorrectAnswer = function () {
         $question = mt_rand(1, 999);
