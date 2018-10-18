@@ -4,9 +4,11 @@ namespace BrainGames\GCD;
 
 use function BrainGames\logic\game;
 
+const DESCRIPTION = "Find the greatest common divisor of given numbers.\n";
+
 function run_gcd()
 {
-    $description = "Find the greatest common divisor of given numbers.\n";
+    $description = DESCRIPTION;
     $getQuestionAndCorrectAnswer = function () {
         $number1 = mt_rand(1, 100);
         $number2 = mt_rand(1, 100);
