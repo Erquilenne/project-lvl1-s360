@@ -10,8 +10,9 @@ const OPERAND_ARRAY = ['+', '-', '*'];
 
 function run_calc()
 {
+        $description = DESCRIPTION;
         $getQuestionAndCorrectAnswer = function () {
-            $description = DESCRIPTION;
+
             $integer1 = mt_rand(1, 20);
             $integer2 = mt_rand(1, 20);
             $numberOfOperand = mt_rand(0, 2);
@@ -31,9 +32,7 @@ function run_calc()
             }
             $question = "{$integer1} {$operand} {$integer2}";
             return [$question, $correctAnswer];
-
-            game($description, $getQuestionAndCorrectAnswer);
         };
 
-
+        game($description, $getQuestionAndCorrectAnswer);
 }
