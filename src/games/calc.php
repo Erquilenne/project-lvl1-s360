@@ -31,7 +31,9 @@ function run_calc()
             }
             $question = "{$integer1} {$operand} {$integer2}";
             return [$question, $correctAnswer];
+
+            game($description, $getQuestionAndCorrectAnswer);
         };
 
-        game($description, $getQuestionAndCorrectAnswer);
+
 }
