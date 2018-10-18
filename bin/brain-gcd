@@ -2,6 +2,6 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 
-use function BrainGames\Cli\run_gcd;
+use function BrainGames\GCD\run_gcd;
 
 run_gcd();

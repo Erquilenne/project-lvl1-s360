@@ -1,29 +1,24 @@
 <?php
-namespace BrainGames\Calc;
 
-function questionEven($name)
+namespace BrainGames\Even;
+
+use function BrainGames\logic\game;
+
+function run_even()
 {
-    $question = mt_rand(1, 999);
-    $even = false;
-    $yes = 'yes';
-    $no = 'no';
-    $correctAnswer = isEven($question) ? 'yes' : 'no';
-    $even = isEven($question) ? true : false;
-    line('Question: %s', $question);
-    $answer = prompt('Your answer ');
+    $description = "Answer \"yes\" if number even otherwise answer \"no\".\n";
 
-    if ($answer == $correctAnswer) {
-        line('Correct!');
-
-    } else {
-        line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
-        line("Let's try again, %s!", $name);
-        return true;
-    }
+    $getQuestionAndCorrectAnswer = function () {
+        $question = mt_rand(1, 999);
+        $correctAnswer = isEven($question) ? 'yes' : 'no';
+        $question = "{$question}";
+        return [$question, $correctAnswer];
+    };
+    game($description, $getQuestionAndCorrectAnswer);
 }
 
 
-
-function isEven($question){
-    return $question % 2 ===0;
+function isEven($question)
+{
+    return $question % 2 === 0;
 }

@@ -4,4 +4,4 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use function BrainGames\Calc\run_calc;
 
-run_gcd();
+run_calc();

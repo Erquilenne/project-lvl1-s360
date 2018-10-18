@@ -10,7 +10,10 @@
     "autoload":{
          "files": [
 	    "src/Cli.php",
-      "src/logic.php"
+      "src/logic.php",
+      "src/games/calc.php",
+      "src/games/Even.php",
+      "src/games/gcd.php"
 	  ]
     },
     "scripts": {
