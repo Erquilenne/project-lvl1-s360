@@ -25,8 +25,8 @@ function run_balance()
         for ($i = 0; $i < $size; $i++) {
             $balanceWithoutRemain[] = $baseInteger;
         }
-        if($remain !== 0){
-            for($i = 0; $i < $remain; $i++){
+        if ($remain !== 0) {
+            for ($i = 0; $i < $remain; $i++) {
                 $balanceWithoutRemain[$i]++;
             }
         }
