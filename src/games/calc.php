@@ -11,27 +11,27 @@ const OPERAND_ARRAY = ['+', '-', '*'];
 function run_calc()
 {
         $getQuestionAndCorrectAnswer = function () {
-        $description = DESCRIPTION;
-        $integer1 = mt_rand(1, 20);
-        $integer2 = mt_rand(1, 20);
-        $numberOfOperand = mt_rand(0, 2);
-        $operand = OPERAND_ARRAY[$numberOfOperand];
-        $question = "{$integer1} {$operand} {$integer2}";
+            $description = DESCRIPTION;
+            $integer1 = mt_rand(1, 20);
+            $integer2 = mt_rand(1, 20);
+            $numberOfOperand = mt_rand(0, 2);
+            $operand = OPERAND_ARRAY[$numberOfOperand];
+            $question = "{$integer1} {$operand} {$integer2}";
 
-        switch ($operand) {
-          case '+':
-            $correctAnswer = $integer1 + $integer2;
-            break;
-          case '-':
-            $correctAnswer = $integer1 - $integer2;
-            break;
-          case '*':
-            $correctAnswer = $integer1 * $integer2;
-            break;
-        }
-        $question = "{$integer1} {$operand} {$integer2}";
-        return [$question, $correctAnswer];
-    };
+            switch ($operand) {
+                case '+':
+                    $correctAnswer = $integer1 + $integer2;
+                    break;
+                case '-':
+                    $correctAnswer = $integer1 - $integer2;
+                    break;
+                case '*':
+                    $correctAnswer = $integer1 * $integer2;
+                    break;
+            }
+            $question = "{$integer1} {$operand} {$integer2}";
+            return [$question, $correctAnswer];
+        };
 
-    game($description, $getQuestionAndCorrectAnswer);
+        game($description, $getQuestionAndCorrectAnswer);
 }
