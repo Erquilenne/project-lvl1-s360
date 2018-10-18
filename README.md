@@ -9,6 +9,9 @@
 Аскинема с установкой проекта и запуском brain-gcd -
 https://asciinema.org/a/jWxE9nXMsWH66wrFLYyzLDGqC
 
+Аскинема с установкой проекта и запуском brain-balance - https://asciinema.org/a/KLWIL7il0W4YrLucrTWTvFD6i
+
+
 <a href="https://codeclimate.com/github/Erquilenne/project-lvl1-s360/maintainability"><img src="https://api.codeclimate.com/v1/badges/629e5d58f87125489b99/maintainability" /></a>
 
 <a href="https://codeclimate.com/github/Erquilenne/project-lvl1-s360/test_coverage"><img src="https://api.codeclimate.com/v1/badges/629e5d58f87125489b99/test_coverage" /></a>
