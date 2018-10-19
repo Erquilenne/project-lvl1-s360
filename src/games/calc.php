@@ -28,8 +28,8 @@ function run_calc()
                     break;
             }
             $question = "{$integer1} {$operand} {$integer2}";
-            return [DESCRIPTION, (string)$correctAnswer];
+            return [$question, (string)$correctAnswer];
         };
 
-        game($description, $getQuestionAndCorrectAnswer);
+        game(DESCRIPTION, $getQuestionAndCorrectAnswer);
 }
