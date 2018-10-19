@@ -17,7 +17,6 @@ function run_even()
     game(DESCRIPTION, $getQuestionAndCorrectAnswer);
 }
 
-
 function isEven($question)
 {
     return $question % 2 === 0;
