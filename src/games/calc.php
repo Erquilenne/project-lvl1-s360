@@ -6,11 +6,8 @@ use function BrainGames\logic\game;
 const DESCRIPTION = 'What is the result of the expression?';
 const OPERAND_ARRAY = ['+', '-', '*'];
 
-
-
 function run_calc()
 {
-        $description = DESCRIPTION;
         $getQuestionAndCorrectAnswer = function () {
 
             $integer1 = mt_rand(1, 20);
@@ -31,7 +28,7 @@ function run_calc()
                     break;
             }
             $question = "{$integer1} {$operand} {$integer2}";
-            return [$question, $correctAnswer];
+            return [DESCRIPTION, $correctAnswer];
         };
 
         game($description, $getQuestionAndCorrectAnswer);

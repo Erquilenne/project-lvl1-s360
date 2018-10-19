@@ -8,7 +8,6 @@ const DESCRIPTION = "Balance the given number.";
 
 function run_balance()
 {
-    $description = DESCRIPTION;
     $getQuestionAndCorrectAnswer = function () {
         $integer = mt_rand(111, 9999);
         $question = $integer;
@@ -32,7 +31,7 @@ function run_balance()
         }
         $correctAnswer = implode('', array_reverse($balanceWithoutRemain));
 
-        return [$question, $correctAnswer];
+        return [DESCRIPTION, $correctAnswer];
     };
     game($description, $getQuestionAndCorrectAnswer);
 }

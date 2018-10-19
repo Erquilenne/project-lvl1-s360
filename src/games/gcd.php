@@ -8,7 +8,6 @@ const DESCRIPTION = "Find the greatest common divisor of given numbers.\n";
 
 function run_gcd()
 {
-    $description = DESCRIPTION;
     $getQuestionAndCorrectAnswer = function () {
         $number1 = mt_rand(1, 100);
         $number2 = mt_rand(1, 100);
@@ -17,7 +16,7 @@ function run_gcd()
         return [$question, $correctAnswer];
     };
 
-    game($description, $getQuestionAndCorrectAnswer);
+    game(DESCRIPTION, $getQuestionAndCorrectAnswer);
 }
 
 function GCD($num1, $num2)
