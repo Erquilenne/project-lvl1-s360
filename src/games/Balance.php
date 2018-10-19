@@ -11,16 +11,16 @@ function run_balance()
     $getQuestionAndCorrectAnswer = function () {
         $integer = mt_rand(111, 9999);
         $question = $integer;
-        $integerArray = str_split($integer);
-        $size = sizeof($integerArray);
-        $correctAnswer = calculateBalance($size, $integerArray);
+        $correctAnswer = calculateBalance($integer);
         return [$question, $correctAnswer];
     };
     game(DESCRIPTION, $getQuestionAndCorrectAnswer);
 }
 
-function calculateBalance($size, $integerArray)
+function calculateBalance($integer)
 {
+    $integerArray = str_split($integer);
+    $size = sizeof($integerArray);
     $integerSumm = 0;
     for ($i = 0; $i < $size; $i++) {
         $integerSumm += $integerArray[$i];

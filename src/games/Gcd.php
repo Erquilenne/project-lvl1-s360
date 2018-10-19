@@ -13,7 +13,7 @@ function run_gcd()
         $number2 = mt_rand(1, 100);
         $question = "{$number1} {$number2}";
         $correctAnswer = GCD($number1, $number2);
-        return [$question, $correctAnswer];
+        return [$question, (string)$correctAnswer];
     };
 
     game(DESCRIPTION, $getQuestionAndCorrectAnswer);

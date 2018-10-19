@@ -8,7 +8,7 @@ const DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".';
 
 function run_even()
 {
-    $$getQuestionAndCorrectAnswer = function () {
+    $getQuestionAndCorrectAnswer = function () {
         $question = mt_rand(1, 999);
         $correctAnswer = isEven($question) ? 'yes' : 'no';
         $question = "{$question}";

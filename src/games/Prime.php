@@ -10,7 +10,7 @@ function run_prime()
 {
     $getQuestionAndCorrectAnswer = function () {
         $integer = mt_rand(2, 99);
-        (string)$question = $integer;
+        $question = (string)$integer;
         $correctAnswer = isPrime($integer) ? 'yes' : 'no';
         return [$question, $correctAnswer];
     };
@@ -20,11 +20,13 @@ function run_prime()
 
 function isPrime($integer)
 {
-    $countOfDivisors = 0;
-    for ($i = 1; $i <= $integer; $i++) {
-        if ($integer % $i === 0) {
-            $countOfDivisors++;
+    if ($integer == 1) {
+        return false;
+    }
+    for ($i = 2; $i * $i <= $integer; $i++) {
+        if ($integer % $i == 0) {
+            return false;
         }
     }
-    return ($countOfDivisors <= 2);
+        return true;
 }

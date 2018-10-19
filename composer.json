@@ -14,12 +14,12 @@
          "files": [
 	    "src/Cli.php",
       "src/logic.php",
-      "src/games/calc.php",
+      "src/games/Calc.php",
       "src/games/Even.php",
-      "src/games/gcd.php",
-      "src/games/balance.php",
-      "src/games/progression.php",
-      "src/games/prime.php"
+      "src/games/Gcd.php",
+      "src/games/Balance.php",
+      "src/games/Progression.php",
+      "src/games/Prime.php"
 	  ]
     },
     "scripts": {
