@@ -13,6 +13,7 @@ https://asciinema.org/a/jWxE9nXMsWH66wrFLYyzLDGqC
 
 Аскинема с установкой проекта и запуском brain-progression - https://asciinema.org/a/HqoBlldBk2MeuDOlTWHBoZCzQ
 
+Аскинема с установкой проекта и запуском brain-prime - https://asciinema.org/a/SPqea5StT7JeIynosufKZM0wk
 
 
 <a href="https://codeclimate.com/github/Erquilenne/project-lvl1-s360/maintainability"><img src="https://api.codeclimate.com/v1/badges/629e5d58f87125489b99/maintainability" /></a>
