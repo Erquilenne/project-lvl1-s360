@@ -20,10 +20,10 @@ function run_prime()
 
 function isPrime($integer)
 {
-    if ($integer == 1) {
+    if ($integer <= 1) {
         return false;
     }
-    for ($i = 2; $i * $i <= $integer; $i++) {
+    for ($i = 2; $i <= sqrt($integer); $i++) {
         if ($integer % $i == 0) {
             return false;
         }
